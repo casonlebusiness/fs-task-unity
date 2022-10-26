@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ### Run main server
 python manage.py runserver
 
-### CELERY SETUP
+### Celery setup
 1. Pull redis docker
 2. Run redis server: `docker run --name redis-server -p 6379:6379 -d redis redis-server  --save 60 1 --loglevel warning`
 3. Run celery worker: `celery -A unity worker -l INFO`
